@@ -1,38 +1,116 @@
 .App {
-  text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+    margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 19px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+    margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 3px;
+    outline: none;
+    width: 200px;
+}
+
+input:focus {
+    border: 2px solid blueviolet;
+}
+
+.formControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: #6d28d9;
+    background-color: #fff;
+    border: 1px solid #6d28d9;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove {
+    color: rgb(236, 68, 68);
+    border: 1px solid rgb(236, 68, 68);
+    margin-left: 10px;
+}
+
+.addTodo {
+    background-color: #6d28d9;
+    color: #fff;
+}
+
+.updateTodo {
+    color: #814cd8;
+    background-color: #fff;
+}
+
+.todoText{
+    cursor: pointer;
+   font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+header span{
+    margin-right: 20px;
+    display: inline-block;
+    width: 20px;
+    font-size: 14px;
+    height: 20px;
+    background-color: #d0c7f7;
+    color: #6d28d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectOption{
+    width: 140px;
+    margin: 0 40px;
 }
